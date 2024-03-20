@@ -1,0 +1,217 @@
+* {
+    font-family: "Open Sans", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/*ナビゲーションバー*/
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .nav-bar {
+    display: block;
+    height: 50px;
+    background: #FFFFFF;
+}
+
+nav .nav-bar::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #f27986;
+    left: 0;
+    content: "";
+    bottom: -1px;
+}
+
+nav .nav-menu {
+    display: none;
+}
+
+nav .nav-bar ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+nav .nav-bar ul li {
+    font-size: 25px;
+}
+
+/*ホバー時アンダーライン*/
+nav .nav-bar ul li a {
+    position: relative;
+}
+
+nav .nav-bar ul li a::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #242424;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform 0.8s;
+}
+
+nav .nav-bar ul li a:hover::after {
+    transform: scale(1, 1);
+}
+
+/*メインビジュアル*/
+#top {
+    position: relative;
+}
+
+#top .background {
+    width: 100%;
+    height: 40vw;
+    min-height: 30vh;
+    max-height: 50vh;
+    overflow: hidden;
+}
+
+#top .background img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+#top .title {
+    position: absolute;
+    top: 15vh;
+}
+
+#top .title h1 {
+    padding-left: 58vw;
+    font-size: max(2.8vw, 20px);
+    color: #D4D4D4;
+}
+
+@media screen and (max-width: 768px) {
+    nav .nav-bar {
+        display: none;
+    }
+
+    nav .nav-menu {
+        display: block;
+    }
+
+    #top .title h1 {
+        padding-left: 49vw;
+        font-size: max(3.8vw, 16px);
+    }
+}
+
+/*メインコンテンツ*/
+section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.wrapper {
+    max-width: 1280px;
+    padding-left: 4em;
+    padding-right: 4em;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#profile .profile-row {
+    margin-top: 20px;
+    display: flex;
+}
+
+#profile .profile-picture {
+    width: 50%;
+}
+
+#profile .profile-intro {
+    width: 50%;
+}
+
+#profile .profile-intro .name {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#profile .name h4 {
+    font-size: 40px;
+}
+
+#profile .sns {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+#profile .sns .sns-list li {
+    margin-bottom: 5px;
+    height: 35px;
+    align-items: center;
+    vertical-align: center;
+}
+
+#profile .sns .sns-list li a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#profile .sns .sns-list li span {
+    position: relative;
+}
+
+#profile .sns .sns-list li span::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #C0C0C0;
+    left: 0;
+    content: "";
+    bottom: -3px;
+}
+
+#profile .sns .sns-list li:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+    #profile .profile-row {
+        display: revert;
+    }
+
+    #profile .profile-picture {
+        width: revert;
+    }
+
+    #profile .profile-intro {
+        width: revert;
+    }
+
+    #profile .name h4 {
+        font-size: max(6vw ,35px);
+    }
+
+    #profile .name small {
+        font-size: 13px;
+    }
+}
