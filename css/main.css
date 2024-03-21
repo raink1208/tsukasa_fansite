@@ -1,5 +1,14 @@
-* {
-    font-family: "Open Sans", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
+:root {
+    --font-jp: "Open Sans", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
+    --font-round: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+body {
+    font-family: var(--font-jp);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-round);
 }
 
 img {
@@ -166,8 +175,6 @@ section h3 {
 #profile .sns .sns-list li {
     margin-bottom: 5px;
     height: 35px;
-    align-items: center;
-    vertical-align: center;
 }
 
 #profile .sns .sns-list li a {
