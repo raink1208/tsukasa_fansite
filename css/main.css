@@ -130,6 +130,10 @@ section {
     padding-bottom: 50px;
 }
 
+section .section-title {
+    text-align: center;
+}
+
 .wrapper {
     max-width: 1280px;
     padding-left: 4em;
@@ -141,7 +145,6 @@ section {
 
 section h3 {
     font-size: 30px;
-    text-align: center;
 }
 
 #profile .profile-row {
@@ -199,6 +202,18 @@ section h3 {
 
 #profile .sns .sns-list li:hover {
     opacity: 0.6;
+}
+
+#profile .data-row {
+    display: flex;
+}
+
+#profile .data-row .tsukasa-info {
+    width: 50%;
+}
+
+#profile .data-row .stream-info {
+    width: 50%;
 }
 
 @media screen and (max-width: 768px) {
