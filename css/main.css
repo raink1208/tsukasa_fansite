@@ -134,7 +134,7 @@ section .section-title {
     text-align: center;
 }
 
-.wrapper {
+.inner-wrapper {
     max-width: 1280px;
     padding-left: 4em;
     padding-right: 4em;
@@ -204,13 +204,19 @@ section h3 {
     opacity: 0.6;
 }
 
+#profile .profile-detail {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: rgba(243, 243, 243, 0.8);
+}
+
 #profile .data-row-title {
-    padding-left: 10px;
     margin-top: 30px;
 }
 
 #profile .data-row {
     display: flex;
+    gap: 2rem;
 }
 
 #profile .data-row .tsukasa-info {
@@ -223,6 +229,12 @@ section h3 {
 
 #profile .data-row dl {
     margin: 20px 0;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+#profile .data-row dl:not(:last-child) {
+    border-bottom: 2px dashed rgba(252, 132, 143, 0.5);
 }
 
 #profile .data-row dl dt {
@@ -264,5 +276,17 @@ section h3 {
 
     #profile .name small {
         font-size: 13px;
+    }
+
+    #profile .data-row .tsukasa-info {
+        width: revert;
+    }
+
+    #profile .data-row .stream-info {
+        width: revert;
+    }
+
+    #profile .data-row .tsukasa-info dl:last-child {
+        border-bottom: 2px dashed rgba(252, 132, 143, 0.5);
     }
 }
