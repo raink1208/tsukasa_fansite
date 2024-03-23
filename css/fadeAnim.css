@@ -6,8 +6,8 @@
 }
 
 [data-anim-slide].is-view {
-    opacity: 1;
     animation-name: anim-slide;
+    animation-fill-mode: forwards;
 }
 
 [data-anim-slide="bottomIn"].is-view {
@@ -22,6 +22,11 @@
     animation-name: anim-slide-rightIn;
 }
 
+[data-anim-slide="delay-leftIn-child"] .delay {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
 [data-anim-slide="delay-leftIn-child"].is-view .delay {
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -34,17 +39,17 @@
 
 [data-anim-slide="delay-leftIn-child"].is-view .delay:nth-child(2) {
     animation-name: anim-slide-leftIn;
-    animation-duration: 1.2s;
+    animation-delay: .2s;
 }
 
 [data-anim-slide="delay-leftIn-child"].is-view .delay:nth-child(3) {
     animation-name: anim-slide-leftIn;
-    animation-duration: 1.4s;
+    animation-delay: .4s;
 }
 
 [data-anim-slide="delay-leftIn-child"].is-view .delay:nth-child(4) {
     animation-name: anim-slide-leftIn;
-    animation-duration: 1.6s;
+    animation-delay: .6s;
 }
 
 

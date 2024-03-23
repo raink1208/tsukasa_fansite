@@ -249,6 +249,11 @@ section h3 {
 }
 
 @media screen and (max-width: 768px) {
+    #profile .profile-detail .inner-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     #profile .profile-row {
         display: revert;
     }
@@ -291,5 +296,68 @@ section h3 {
 
     #profile .data-row .tsukasa-info dl:last-child {
         border-bottom: 2px dashed rgba(252, 132, 143, 0.5);
+    }
+}
+
+#history .history-list li {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+#history .history-list li:not(:last-child) {
+    border-bottom: 2px dashed rgba(252, 132, 143, 0.5);
+}
+
+#history .history-list .history-content {
+    display: flex;
+    gap: 2rem;
+}
+
+#history .history-list .history-content .thumbnail {
+    width: 35svw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#history .history-list .history-content .thumbnail img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center center;
+
+}
+
+#history .history-list .history-content .description {
+    display: grid;
+    align-items: center;
+    align-content: center;
+
+    width: 70%;
+}
+
+#history .history-list .history-content .description small {
+    padding-left: 5px;
+}
+
+#history .history-list .history-content .description .title {
+    font-size: 1.7em;
+}
+
+@media screen and (max-width: 768px) {
+    #history .history-list .history-content {
+        display: revert;
+    }
+
+    #history .history-list .history-content .thumbnail {
+        width: revert;
+    }
+
+    #history .history-list .history-content .description {
+        width: 100%;
+        margin-top: 8px;
+        padding-left: 10px;
+    }
+
+    #history .history-list .history-content .description .title {
+        font-size: 20px;
     }
 }
