@@ -1,12 +1,12 @@
 Pace.on("done", () => {
-    inview();
+    fadein();
     $(window).on("scroll", () => {
-        inview();
+        fadein();
     })
 })
 
-function inview() {
-    $(".js-inview").each((_, element) => {
+function fadein() {
+    $(".js-fadein").each((_, element) => {
         $(element).offset().top - $(window).height() + 200 < $(window).scrollTop() && $(element).addClass("is-view");
     })
 }
