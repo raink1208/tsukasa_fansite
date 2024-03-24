@@ -207,7 +207,7 @@ section h3 {
     bottom: -3px;
 }
 
-#profile .sns .sns-list li:hover {
+#profile .sns .sns-list li a:hover {
     opacity: 0.6;
 }
 
