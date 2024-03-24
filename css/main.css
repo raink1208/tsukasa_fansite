@@ -249,6 +249,11 @@ section h3 {
 }
 
 @media screen and (max-width: 768px) {
+    #profile .inner-wrapper {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     #profile .profile-detail .inner-wrapper {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -319,6 +324,7 @@ section h3 {
 }
 
 #history .history-list .history-content .thumbnail {
+    aspect-ratio: 16/9;
     width: 35svw;
     border-radius: 10px;
     overflow: hidden;
@@ -328,7 +334,6 @@ section h3 {
     aspect-ratio: 16/9;
     object-fit: cover;
     object-position: center center;
-
 }
 
 #history .history-list .history-content .description {
@@ -374,4 +379,9 @@ section h3 {
     #history .history-list .history-content .description .title {
         font-size: 20px;
     }
+}
+
+#history .history-list li a:hover .history-content .thumbnail img {
+    transform: scale(1.1, 1.1);
+    transition: .5s all;
 }
