@@ -1,6 +1,11 @@
 :root {
     --font-jp: "Open Sans", "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
     --font-round: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+
+    --accent-color: rgb(185, 46, 70);
+    --accent-color-alpha: rgba(185, 46, 70, 0.5);
+
+    --light-accent-color: #fd838d;
 }
 
 body {
@@ -15,6 +20,11 @@ img {
     width: 100%;
     height: auto;
     vertical-align: bottom;
+}
+
+.link {
+    color: #2c2f75;
+    text-decoration: underline;
 }
 
 /*ナビゲーションバー*/
@@ -34,7 +44,7 @@ nav .nav-bar::after {
     position: absolute;
     width: 100%;
     height: 1px;
-    background: #f27986;
+    background: var(--light-accent-color);
     left: 0;
     content: "";
     bottom: -1px;
@@ -243,7 +253,7 @@ section h3 {
 }
 
 #profile .data-row dl:not(:last-child) {
-    border-bottom: 2px dashed rgba(252, 132, 143, 0.5);
+    border-bottom: 2px dashed var(--accent-color-alpha);
 }
 
 #profile .data-row dl dt {
@@ -311,7 +321,7 @@ section h3 {
     }
 
     #profile .data-row .tsukasa-info dl:last-child {
-        border-bottom: 2px dashed rgba(252, 132, 143, 0.5);
+        border-bottom: 2px dashed var(--accent-color-alpha);
     }
 }
 
@@ -326,7 +336,7 @@ section h3 {
 }
 
 #history .history-list li:not(:last-child) {
-    border-bottom: 2px dashed rgba(252, 132, 143, 0.5);
+    border-bottom: 2px dashed var(--accent-color-alpha);
 }
 
 #history .history-list .history-content {
@@ -398,6 +408,7 @@ section h3 {
 }
 
 footer {
+    background-color: var(--light-accent-color);
     padding-top: 50px;
     padding-bottom: 30px;
     text-align: center;
@@ -405,5 +416,5 @@ footer {
 
 footer p {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
