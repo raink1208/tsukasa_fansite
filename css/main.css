@@ -414,12 +414,16 @@ section h3 {
 
 footer {
     background-color: var(--light-accent-color);
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
 }
 
+footer h2 {
+    font-size: 2rem;
+}
+
 footer p {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 5px;
 }
