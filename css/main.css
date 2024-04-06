@@ -136,8 +136,7 @@ nav .nav-bar ul li a:hover::after {
 
 /*メインコンテンツ*/
 section {
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding-top: 50px;
 }
 
 section .section-title {
@@ -164,6 +163,41 @@ section h3 {
     font-size: 30px;
 }
 
+/* 最新情報 */
+#news .news-list {
+    padding-top: 40px;
+    height: 400px;
+}
+
+#news .news-list .card {
+    display: block;
+    position: relative;
+    height: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #D4D4D4;
+}
+
+#news .news-list .card .card-thumbnail {
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+}
+
+#news .news-list .card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+#news .news-list .card .card-article {
+    margin-top: 10px;
+}
+
+/* プロフィール */
 #profile .profile-row {
     margin-top: 20px;
     display: flex;
