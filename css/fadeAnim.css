@@ -52,6 +52,10 @@
     animation-delay: .6s;
 }
 
+[data-anim-slide="delay-leftIn-child"].is-view .delay:nth-child(5) {
+    animation-name: anim-slide-leftIn;
+    animation-delay: .8s;
+}
 
 @keyframes anim-slide {
     0% {
