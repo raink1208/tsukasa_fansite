@@ -16,6 +16,12 @@ h1, h2, h3, h4 {
     font-family: var(--font-round);
 }
 
+.wip {
+    padding-top: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -374,29 +380,37 @@ section h3 {
     padding-right: 3rem;
 }
 
+#recommend .subtitle {
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+}
+
 #recommend .recommend-list {
     padding-top: 20px;
 }
 
 #recommend .recommend-list .content {
-    margin-top: 30px;
+    margin-top: 50px;
     padding-bottom: 10px;
 }
 
 #recommend .recommend-list .content .title {
     padding-left: 25px;
     font-size: 30px;
+
+    font-family: "Noto Sans Jp", sans-serif;
 }
 
 #recommend .recommend-list .content .column {
     display: flex;
-    gap: 1.7rem;
+    gap: 3.5rem;
 
     padding-top: 15px;
 }
 
 #recommend .recommend-list .content .thumbnail {
-    width: 50%;
+    width: 55%;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -412,14 +426,21 @@ section h3 {
 
 #recommend .recommend-list .content p {
     width: 50%;
-    font-size: 15px;
+    max-width: 500px;
+    font-size: clamp(15px, 1.2vw, 16px);
+    line-height: 23px;
     padding-top: 10px;
 }
 
 @media screen and (max-width: 865px) {
     #recommend .inner-wrapper {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #recommend .recommend-list .content .title {
+        padding-left: revert;
+        font-size: 25px;
     }
 
     #recommend .recommend-list .content .column {
@@ -430,12 +451,16 @@ section h3 {
     }
     #recommend .recommend-list .content p {
         width: 100%;
-        padding: 10px 1rem;
-        font-size: 15px;
+        max-width: none;
+        padding: 10px;
     }
 }
 
+#history {
+}
+
 #history h4 {
+    padding-left: 15px;
     margin-top: 15px;
     font-size: 35px;
 }
