@@ -65,7 +65,18 @@
                 <img src="img/profile_logo.webp" alt="プロフィール" class="section-title-img js-fadein" data-anim-slide="bottomIn">
                 <div class="profile-row">
                     <div class="profile-picture js-fadein" data-anim-slide="rightIn">
-                        <img src="img/tsukasa.webp" alt="つかさ 立ち絵" loading="lazy">
+                        <div class="standPicture">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/tsukasa.webp" alt="つかさ 立ち絵" loading="lazy">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/swimsuit.webp" alt="つかさ 水着 立ち絵" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                     </div>
                     <div class="profile-intro">
                         <div class="name js-fadein" data-anim-slide="leftIn">
@@ -445,6 +456,8 @@
     <p>@rain1208_v</p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/fadeAnim.js"></script>
+<script src="js/standPicture.js"></script>
 </body>
 </html>

@@ -216,6 +216,18 @@ section h3 {
 
 #profile .profile-picture {
     width: 50%;
+    aspect-ratio: 1/1;
+}
+
+#profile .profile-picture .standPicture {
+    height: 100%;
+    width: 100%;
+}
+
+#profile .profile-picture img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 #profile .profile-intro {
@@ -337,6 +349,7 @@ section h3 {
     #profile .profile-picture {
         width: revert;
     }
+
 
     #profile .profile-intro {
         width: revert;
